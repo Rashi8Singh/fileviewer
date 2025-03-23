@@ -1,0 +1,17 @@
+class Flower:
+    def petal(self):
+        return "Flower have different colors"
+
+class rose(Flower):
+    def petal(self):
+        return "Red!"
+
+class dalia(Flower):
+    def petal(self):
+        return "Violet!"
+
+# Using polymorphism
+flowers = [rose(), dalia(), Flower()]
+
+for flower in flowers:
+    print(flower.petal())  # Calls the appropriate method based on the object's class
